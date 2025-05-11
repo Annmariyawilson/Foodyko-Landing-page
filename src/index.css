@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+
+/* Hide the navigation arrows by default */
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Show arrows when hovering over the carousel */
+.mySwiper:hover .swiper-button-next,
+.mySwiper:hover .swiper-button-prev {
+  opacity: 1;
+}

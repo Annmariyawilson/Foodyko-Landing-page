@@ -1,0 +1,114 @@
+import React, { useState } from "react";
+import { Plus, Minus } from "lucide-react";
+import bannerImg from "../assets/bannerr.jpeg"; 
+
+const faqs = [
+  {
+    question: "How can I get in touch for more details about your products?",
+    answer:
+      "You can reach us by filling out the contact form on our website, calling our customer support at [insert phone number], or emailing us at [insert email address]. We're here to assist you with any inquiries!",
+  },
+  {
+    question: "What types of food products do you offer?",
+    answer: "We offer a range of premium, organic, and authentic food products including snacks, groceries, beverages, and gifting options.",
+  },
+  {
+    question: "How can I become a seller on Foodyko?",
+    answer: "Visit our 'Become a Seller' page and fill out the registration form to get started",
+  },
+  {
+    question: "Do you offer subscription plans for regular customers?",
+    answer: "Yes, we offer flexible subscription plans with exclusive benefits and discounts",
+  },
+  {
+    question: "How can I track my order?",
+    answer: "Log in to your account and go to 'My Orders' to view real-time order tracking updates",
+  },
+];
+
+const FAQ = () => {
+  const [openIndex, setOpenIndex] = useState(0);
+
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  return (
+    <>
+      {/* FAQ Section */}
+      <div className="bg-white px-6 py-16 md:px-20 flex flex-col md:flex-row gap-10">
+        {/* Left Section */}
+        <div className="md:w-1/2">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            Frequently asked questions
+          </h2>
+          <p className="text-gray-600 text-base md:text-lg">
+            Everything you need to know about the product and billing.
+          </p>
+        </div>
+
+        {/* Right Section */}
+        <div className="md:w-1/2 space-y-4">
+          {faqs.map((faq, index) => (
+            <div key={index} className="border-b border-gray-200 pb-4">
+              <button
+                onClick={() => toggleFAQ(index)}
+                className="flex justify-between w-full items-center text-left"
+              >
+                <span className="text-gray-800 font-medium">
+                  {faq.question}
+                </span>
+                <span className="text-red-500">
+                  {openIndex === index ? (
+                    <Minus size={20} />
+                  ) : (
+                    <Plus size={20} />
+                  )}
+                </span>
+              </button>
+              {openIndex === index && faq.answer && (
+                <p className="text-gray-500 mt-2 text-sm md:text-base">
+                  {faq.answer}
+                </p>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+
+     {/* Banner Section */}
+<div className="bg-[#fef0cc] px-4 md:px-16 flex flex-col md:flex-row items-center justify-between gap-10">
+  {/* Left Image - Chips */}
+  <div className="flex-shrink-0">
+    <img
+      src="/src/assets/mater/mockup-free-cqS-fU_G-y0-unsplash-removebg-preview.png"
+      alt="Potato Chips"
+      className="w-60 md:w-64 object-contain"
+    />
+  </div>
+
+  {/* Center Content */}
+  <div className="text-center max-w-xl">
+    <p className="text-lg md:text-xl font-medium text-gray-800">
+      We're here to help! Feel free to reach out to us for any inquiries or assistance.
+    </p>
+    <button className="mt-6 bg-red-500 text-white px-6 py-3 rounded-md hover:bg-red-600 transition">
+      Let’s Connect
+    </button>
+  </div>
+
+  {/* Right Image - Food Products */}
+  <div className="flex-shrink-0">
+    <img
+      src="/src/assets/mater/shahas26_Realistic_minimalistic_product_display_for_a_food_samp_7ee06452-aa16-4952-bcb2-37f591a693c3-removebg-preview.png"
+      alt="Foodyko Products"
+      className="w-56 md:w-64 object-contain"
+    />
+  </div>
+</div>
+
+    </>
+  );
+};
+
+export default FAQ;
