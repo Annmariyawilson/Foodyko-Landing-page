@@ -50,7 +50,7 @@ const Hero = () => {
         {/* Center Image Section */}
         <div className="w-full md:w-1/3 flex justify-center">
           <img
-            src="/src/assets/foodyko_img1.png"
+            src="src/assets/foodyko_img1.png"
             alt="Foodyko Panda"
             className="w-[300px] md:w-[400px] object-contain transition-transform duration-200 ease-in-out hover:scale-102"
           />
@@ -77,49 +77,49 @@ const Hero = () => {
         </div>
       </div>
 
-{/* Features Section */}
-<div className="bg-[#A47C3B] text-white py-12 flex flex-col md:flex-row items-center justify-around w-full space-y-4 md:space-y-0">
-  <div className="flex items-center space-x-2">
-    <img
-      src="src/assets/homegrown.png"
-      alt="Farm-Fresh Offerings"
-      className="w-6 h-6 md:w-9 md:h-9"
-    />
-    <span className="text-sm md:text-lg">Farm-Fresh Offerings</span>
-  </div>
-  <div className="flex items-center space-x-2">
-    <img
-      src="src/assets/sustainablility.png"
-      alt="Sustainable Sourcing"
-      className="w-6 h-6 md:w-9 md:h-9"
-    />
-    <span className="text-sm md:text-lg">Sustainable Sourcing</span>
-  </div>
-  <div className="flex items-center space-x-2">
-    <img
-      src="src/assets/maple-leaf.png"
-      alt="Seasonal Picks"
-      className="w-6 h-6 md:w-9 md:h-9"
-    />
-    <span className="text-sm md:text-lg">Seasonal Picks</span>
-  </div>
-  <div className="flex items-center space-x-2">
-    <img
-      src="src/assets/box.png"
-      alt="Customizable Trial Box"
-      className="w-6 h-6 md:w-9 md:h-9"
-    />
-    <span className="text-sm md:text-lg">Customizable Trial Box</span>
-  </div>
-  <div className="flex items-center space-x-2">
-    <img
-      src="src/assets/delivery-truck.png"
-      alt="Flexible Delivery"
-      className="w-6 h-6 md:w-9 md:h-9"
-    />
-    <span className="text-sm md:text-lg">Flexible Delivery</span>
-  </div>
-</div>
+        {/* Features Section */}
+        <div className="bg-[#A47C3B] text-white py-12 flex flex-col md:flex-row items-center justify-around w-full space-y-4 md:space-y-0">
+          <div className="flex items-center space-x-2">
+            <img
+              src="src/assets/homegrown.png"
+              alt="Farm-Fresh Offerings"
+              className="w-6 h-6 md:w-9 md:h-9"
+            />
+            <span className="text-sm md:text-lg">Farm-Fresh Offerings</span>
+          </div>
+          <div className="flex items-center space-x-2">
+            <img
+              src="src/assets/sustainablility.png"
+              alt="Sustainable Sourcing"
+              className="w-6 h-6 md:w-9 md:h-9"
+            />
+            <span className="text-sm md:text-lg">Sustainable Sourcing</span>
+          </div>
+          <div className="flex items-center space-x-2">
+            <img
+              src="src/assets/maple-leaf.png"
+              alt="Seasonal Picks"
+              className="w-6 h-6 md:w-9 md:h-9"
+            />
+            <span className="text-sm md:text-lg">Seasonal Picks</span>
+          </div>
+          <div className="flex items-center space-x-2">
+            <img
+              src="src/assets/box.png"
+              alt="Customizable Trial Box"
+              className="w-6 h-6 md:w-9 md:h-9"
+            />
+            <span className="text-sm md:text-lg">Customizable Trial Box</span>
+          </div>
+          <div className="flex items-center space-x-2">
+            <img
+              src="src/assets/delivery-truck.png"
+              alt="Flexible Delivery"
+              className="w-6 h-6 md:w-9 md:h-9"
+            />
+            <span className="text-sm md:text-lg">Flexible Delivery</span>
+          </div>
+        </div>
 
       {/* Browse by category */}
       <div className="text-center py-14 px-6 md:px-12">
