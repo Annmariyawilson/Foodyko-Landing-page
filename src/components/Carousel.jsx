@@ -6,7 +6,8 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import products from "../products";
-import img from "../assets/green_banner-removebg.png";
+import img from "./assets/green_banner-removebg.png";
+import vegIcon from "./assets/mater/veg-icon.jpg";
 
 const Carousel = () => {
   return (
@@ -79,11 +80,7 @@ const Carousel = () => {
                     <p className="text-red-500 text-xs sm:text-sm md:text-base">
                       {product.category}
                     </p>
-                    <img
-                      src="src/assets/mater/veg-icon.jpg"
-                      className="w-3 sm:w-4"
-                      alt="veg-icon"
-                    />
+                    <img src={vegIcon} className="w-3 sm:w-4" alt="veg-icon" />
                   </div>
 
                   <div className="flex justify-between items-start mt-1 min-h-[40px]">
