@@ -6,8 +6,8 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import products from "../products";
-import img from "./assets/green_banner-removebg.png";
-import vegIcon from "./assets/mater/veg-icon.jpg";
+import img from "../assets/green_banner-removebg.png";
+import vegIcon from "../assets/mater/veg-icon.jpg";
 
 const Carousel = () => {
   return (
