@@ -1,5 +1,7 @@
 import React from "react";
 
+import Bannerbg from '../assets/mater/Banner-bgimg.jpeg'
+
 function Banner1() {
   return (
     <div>
@@ -73,7 +75,7 @@ function Banner1() {
       {/* Desktop View */}
       <div className="relative hidden sm:block container mx-auto px-4 md:px-0">
         <img
-          src="src/assets/mater/Banner-bgimg.jpeg"
+          src={Bannerbg}
           alt="Foodyko Banner"
           className="w-full h-auto rounded-sm object-cover min-h-[300px]"
         />

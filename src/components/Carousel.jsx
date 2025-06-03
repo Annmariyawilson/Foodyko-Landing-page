@@ -1,4 +1,3 @@
-// src/components/Carousel.jsx
 
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -11,7 +10,6 @@ import "swiper/css/autoplay";
 import products from "../products";
 import img from "../assets/green_banner-removebg.png";
 
-// Import both icons
 import vegIcon from "../assets/mater/veg-icon.jpg";
 import nonVegIcon from "../assets/mater/non-veg.png";
 

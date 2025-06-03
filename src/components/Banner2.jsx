@@ -1,12 +1,14 @@
 import React from "react";
 
+import Banner from "../assets/Banner111.jpeg";
+
 function Banner2() {
   return (
     <div>
       {/* Desktop View with Banner */}
       <div className="hidden sm:block relative w-full mt-12 flex flex-col justify-center items-center text-center">
         <img
-          src="src/assets/Banner111.jpeg"
+          src={Banner}
           alt="Community Banner"
           className="w-full h-auto object-cover"
         />
