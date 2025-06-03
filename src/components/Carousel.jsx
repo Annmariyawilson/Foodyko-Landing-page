@@ -1,3 +1,5 @@
+// src/components/Carousel.jsx
+
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
@@ -5,9 +7,13 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
+
 import products from "../products";
 import img from "../assets/green_banner-removebg.png";
+
+// Import both icons
 import vegIcon from "../assets/mater/veg-icon.jpg";
+import nonVegIcon from "../assets/mater/non-veg.png";
 
 const Carousel = () => {
   return (
@@ -26,7 +32,7 @@ const Carousel = () => {
               find your new favorites.
             </p>
             <button className="mt-2 border border-white text-white font-semibold px-4 py-3 text-lg sm:text-sm rounded-md hover:bg-white hover:text-green-700 transition">
-              Start Tasting Today
+              OUR CATEGORIES 
             </button>
           </div>
 
@@ -62,25 +68,33 @@ const Carousel = () => {
         >
           {products.map((product) => (
             <SwiperSlide key={product.id}>
-              <div className="w-full sm:w-[340px] md:w-[360px] flex flex-col mx-auto">
+              <div className="w-full sm:w-[340px] md:w-[360px] flex flex-col mx-auto h-full">
                 {product.badge && (
-                  <span className="absolute top-2 left-5 bg-gray-100 text-black px-2 py-1 rounded-md text-xs font-bold shadow-sm">
+                  <span className="absolute top-2 left-5 bg-gray-100 text-black px-2 py-1 rounded-md text-xs font-bold shadow-sm z-10">
                     {product.badge}
                   </span>
                 )}
 
-                <img
-                  src={product.image}
-                  alt={product.name}
-                  className="w-full h-40 sm:h-48 md:h-56 object-cover rounded-t-lg"
-                />
+                {/* Improved image container with aspect ratio */}
+                <div className="relative w-full pt-[75%] sm:pt-[70%] md:pt-[65%] overflow-hidden rounded-t-lg">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="absolute top-0 left-0 w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
 
                 <div className="bg-white p-3 shadow-md rounded-b-lg flex flex-col flex-grow">
                   <div className="flex items-center justify-between">
                     <p className="text-red-500 text-xs sm:text-sm md:text-base">
                       {product.category}
                     </p>
-                    <img src={vegIcon} className="w-3 sm:w-4" alt="veg-icon" />
+                    <img
+                      src={product.isVeg ? vegIcon : nonVegIcon}
+                      alt={product.isVeg ? "veg" : "non-veg"}
+                      className="w-3 sm:w-4"
+                    />
                   </div>
 
                   <div className="flex justify-between items-start mt-1 min-h-[40px]">
@@ -90,19 +104,6 @@ const Carousel = () => {
                     <p className="text-gray-600 text-xs sm:text-sm md:text-base whitespace-nowrap">
                       {product.weight}
                     </p>
-                  </div>
-
-                  <p className="text-black text-xs sm:text-sm md:text-base font-semibold mt-1">
-                    {product.points} Trial Points
-                  </p>
-
-                  <div className="flex justify-between mt-3">
-                    <button className="text-gray-500 border border-gray-400 px-3 sm:px-5 py-2 text-xs sm:text-sm hover:border-black rounded-md">
-                      Wishlist
-                    </button>
-                    <button className="bg-red-700 text-white px-8 sm:px-6 py-2 text-xs sm:text-sm rounded-md hover:bg-red-800">
-                      Add to Cart
-                    </button>
                   </div>
                 </div>
               </div>

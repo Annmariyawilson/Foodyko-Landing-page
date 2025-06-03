@@ -5,54 +5,67 @@ const Category = () => {
   return (
     <>
       {/* Our Journey Section */}
-      <div className="flex justify-center px-4 py-12 bg-white">
-        <div className="flex flex-col lg:flex-row items-center gap-10 max-w-7xl w-full">
-          <div className="flex-1">
-            <h2 className="text-4xl font-bold text-gray-900 leading-tight mb-6">
-              Our Journey to <br /> True Taste
-            </h2>
-            <p className="text-gray-700 text-base leading-relaxed mb-4">
-              For years, the market has been flooded with mass-produced food
-              products that often compromise on quality and authenticity. But we
-              believed it was time for a change. As people increasingly sought
-              fresh, authentic, and trustworthy food options, we envisioned a
-              platform that celebrates the richness of locally-sourced and
-              artisanal products.
-            </p>
-            <p className="text-gray-700 text-base leading-relaxed mb-6">
-              We dedicated ourselves to curating a selection of packaged foods
-              that embody both authenticity and excellence, ensuring every bite
-              is a testament to quality.
-            </p>
-            <button className="bg-red-700 text-white px-6 py-3 rounded-md hover:bg-red-800 transition">
-              Contact us
-            </button>
-          </div>
-          <div className="flex-1 flex justify-center">
-            <img
-              src="src/assets/mater/pexels-pixabay-533982.jpg"
-              alt="Farmer working in field"
-              className="w-full rounded-2xl shadow-md object-cover"
-            />
+      <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col lg:flex-row items-center gap-8 md:gap-12 lg:gap-16">
+            {/* Text Content */}
+            <div className="lg:flex-1 order-2 lg:order-1">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-4 sm:mb-6">
+                Our Journey to True Taste
+              </h2>
+              <div className="space-y-3 sm:space-y-4">
+                <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
+                  Foodyko is a high-end web app with AI-driven automation,
+                  enabling farmers and manufacturers to start selling their
+                  products in seconds. Also helping them with finding natural
+                  preservative methods in food preservation and packaging.
+                </p>
+                <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
+                  The goal of Foodyko is to become the best place to purchase
+                  high quality food products to users and help farmers to
+                  convert their farm products to value added products and reduce
+                  food waste.
+                </p>
+                <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
+                  The platform acts as a complete AI driven sales tool and
+                  provides all digital services for the farmers, manufactures to
+                  increase their revenue and find a market for their products.
+                </p>
+              </div>
+            </div>
+
+            {/* Image */}
+            <div className="lg:flex-1 order-1 lg:order-2 w-full">
+              <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-w-16 aspect-h-9">
+                <img
+                  src="src/assets/mater/pexels-pixabay-533982.jpg"
+                  alt="Farmer working in field"
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
       {/* Mission & Vision Section */}
       <div className="bg-[#FCDC9D] py-16 px-6 text-center">
         <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-6">
           Our Mission & Vision
         </h2>
         <p className="max-w-4xl mx-auto text-gray-800 text-sm md:text-lg leading-relaxed mb-4">
-          To revolutionize the way people experience food by bridging the gap
-          between farmers and food lovers, ensuring sustainability,
-          transparency, and quality in every product.
+          Our mission is to empower farmers, making high-quality products
+          accessible to users while promoting and supporting farming practices.
+          Through our platform, we aim to bridge the gap between farmers and
+          consumers, fostering a sustainable and thriving agricultural
+          community.
         </p>
         <p className="max-w-4xl mx-auto text-gray-800 text-sm md:text-lg leading-relaxed">
-          Empowering farmers while providing customers with an exceptional
-          food-shopping experience. Through innovative offerings like trial
-          packs, gifting solutions, and exclusive subscriptions, we aim to make
-          premium, authentic food products accessible to everyone.
+          Our vision is to promote value-added products and minimize wastage in
+          the agricultural industry, turning surplus farm produce into valuable
+          assets. We strive to transform every piece of farm produce into a
+          source of value, ensuring that none goes to waste and all contribute
+          to the prosperity of farmers and communities.
         </p>
       </div>
 

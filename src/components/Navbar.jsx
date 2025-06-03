@@ -15,10 +15,18 @@ const Navbar = () => {
 
         {/* Enquiry Button */}
         <div>
-          <button className="bg-red-600 hover:bg-red-700 text-white font-medium text-xs 
-          sm:text-sm md:text-base py-2 sm:py-2.5 md:py-3 px-3 sm:px-4 md:px-5 rounded-md transition duration-300">
-            Make an Enquiry
-          </button>
+          <a
+            href="https://forms.gle/4ohq4DNao3zRz9zY8"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button
+              className="bg-red-600 hover:bg-red-700 text-white font-medium text-xs 
+              sm:text-sm md:text-base py-2 sm:py-2.5 md:py-3 px-3 sm:px-4 md:px-5 rounded-md transition duration-300"
+            >
+              Make an Enquiry
+            </button>
+          </a>
         </div>
       </div>
     </nav>
