@@ -48,6 +48,7 @@ const Category = () => {
           </div>
         </div>
       </div>
+      
       {/* Mission & Vision Section */}
       <div className="bg-[#FCDC9D] py-16 px-6 text-center">
         <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-6">

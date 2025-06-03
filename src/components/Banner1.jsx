@@ -8,7 +8,7 @@ function Banner1() {
         <div className="max-w-xs mx-auto flex flex-col items-center">
           {/* Tagline */}
           <span className="inline-block bg-red-50 text-red-600 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-            Fresh & Affordable
+            Eat Better, Live Smarter
           </span>
 
           {/* Main Heading */}
@@ -18,10 +18,6 @@ function Banner1() {
             with <span className="text-red-600">Foodyko</span>
           </h2>{" "}
 
-          {/* Subheading */}
-          <h4 className="text-sm text-gray-500 mb-5 font-medium">
-            Eat Better, Live Smarter
-          </h4>
           {/* Description */}
           <p className="text-gray-600 text-sm mb-6 leading-relaxed px-2">
             Bringing better food to your table—by uniting local producers and
