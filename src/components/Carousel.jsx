@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
@@ -30,7 +29,7 @@ const Carousel = () => {
               find your new favorites.
             </p>
             <button className="mt-2 border border-white text-white font-semibold px-4 py-3 text-lg sm:text-sm rounded-md hover:bg-white hover:text-green-700 transition">
-              OUR CATEGORIES 
+              OUR CATEGORIES
             </button>
           </div>
 
@@ -66,9 +65,9 @@ const Carousel = () => {
         >
           {products.map((product) => (
             <SwiperSlide key={product.id}>
-              <div className="w-full sm:w-[340px] md:w-[360px] flex flex-col mx-auto h-full">
+              <div className="w-full sm:w-[340px] md:w-[360px] flex left-6 flex-col mx-auto h-full">
                 {product.badge && (
-                  <span className="absolute top-2 left-5 bg-gray-100 text-black px-2 py-1 rounded-md text-xs font-bold shadow-sm z-10">
+                  <span className="absolute top-2 left-3 sm:left-9 bg-gray-100 text-black px-2 py-1 rounded-md text-xs font-bold shadow-sm z-10">
                     {product.badge}
                   </span>
                 )}

@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "../assets/mater/foodyko.png"
 
 const Navbar = () => {
   return (
@@ -7,7 +8,7 @@ const Navbar = () => {
         {/* Logo Section */}
         <div className="flex items-center space-x-1">
           <img
-            src="src/assets/mater/foodyko.png"
+            src={Logo}
             alt="Foodyko Logo"
             className="w-42 h-18"
           />

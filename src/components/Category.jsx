@@ -1,5 +1,6 @@
 import React from "react";
 import Carousel from "./Carousel";
+import journeyimg from "../assets/mater/pexels-pixabay-533982.jpg"
 
 const Category = () => {
   return (
@@ -38,7 +39,7 @@ const Category = () => {
             <div className="lg:flex-1 order-1 lg:order-2 w-full">
               <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-w-16 aspect-h-9">
                 <img
-                  src="src/assets/mater/pexels-pixabay-533982.jpg"
+                  src={journeyimg}
                   alt="Farmer working in field"
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                 />

@@ -85,7 +85,7 @@ const FAQ = () => {
         {/* Left Image - Chips - Hidden on mobile, visible on md+ */}
         <div className="hidden md:block order-1 md:order-none flex-shrink-0 w-40 md:w-56 lg:w-64">
           <img
-            src="/src/assets/mater/mockup-free-cqS-fU_G-y0-unsplash-removebg-preview.png"
+            src="src/assets/mater/removebg2.png"
             alt="Potato Chips"
             className="w-full h-auto object-contain"
           />
@@ -110,7 +110,7 @@ const FAQ = () => {
         {/* Right Image - Food Products */}
         <div className="order-2 md:order-none flex-shrink-0 w-40 md:w-56 lg:w-64">
           <img
-            src="/src/assets/mater/shahas26_Realistic_minimalistic_product_display_for_a_food_samp_7ee06452-aa16-4952-bcb2-37f591a693c3-removebg-preview.png"
+            src="src/assets/mater/removebg1.png"
             alt="Foodyko Products"
             className="w-full h-auto object-contain"
           />

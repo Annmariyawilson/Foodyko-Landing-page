@@ -1,11 +1,11 @@
 import React from "react";
 
-import aiPowered from "../assets/icons/technical-support.png";
+import aiPowered from "../assets/icons/technical_support.png";
 import onboarding from "../assets/icons/onboarding.png";
 import preservation from "../assets/icons/gmo.png";
 import valueAddition from "../assets/icons/farmer.png";
-import digitalServices from "../assets/icons/digital-services.png";
-import foodWastage from "../assets/icons/food-waste.png";
+import digitalServices from "../assets/icons/digital_services.png";
+import foodWastage from "../assets/icons/food_waste.png";
 import uniqueImage from "../assets/mater/Unique.png";
 
 function Commitment() {

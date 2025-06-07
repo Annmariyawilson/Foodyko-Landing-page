@@ -1,12 +1,27 @@
 import { div, img } from "framer-motion/client";
 import React from "react";
 
+import Confectionery from "../assets/desserts.png";
+import Eggs from "../assets/dairy.png";
+import Snacks from "../assets/snack.png";
+import Grains from "../assets/wheat.png";
+import Grocery from "../assets/grocery.png";
+import Herbs from "../assets/mortar.png";
+
+import pandaimg from "../assets/foodyko_img1.png";
+
+import Homegrown from "../assets/homegrown.png";
+import Sustainability from "../assets/sustainablility.png";
+import Seasonal from "../assets/maple-leaf.png";
+import TrialBox from "../assets/box.png";
+import Delivery from "../assets/delivery-truck.png";
+
 const categories = [
   {
     name: "Confectionery",
     image: (
       <img
-        src="src/assets/desserts.png"
+        src={Confectionery}
         alt="Confectionery"
         className="w-10 h-10 sm:w-14 sm:h-14 object-contain group-hover:scale-110 transition-transform"
       />
@@ -16,7 +31,7 @@ const categories = [
     name: "Eggs & Dairy",
     image: (
       <img
-        src="src/assets/dairy.png"
+        src={Eggs}
         alt="Eggs & Dairy"
         className="w-10 h-10 sm:w-14 sm:h-14 object-contain group-hover:scale-110 transition-transform"
       />
@@ -26,7 +41,7 @@ const categories = [
     name: "Snacks & Beverages",
     image: (
       <img
-        src="src/assets/snack.png"
+        src={Snacks}
         alt="Snacks & Beverages"
         className="w-10 h-10 sm:w-14 sm:h-14 object-contain group-hover:scale-110 transition-transform"
       />
@@ -36,7 +51,7 @@ const categories = [
     name: "Grains",
     image: (
       <img
-        src="src/assets/wheat.png"
+        src={Grains}
         alt="Grains"
         className="w-10 h-10 sm:w-14 sm:h-14 object-contain group-hover:scale-110 transition-transform"
       />
@@ -46,7 +61,7 @@ const categories = [
     name: "Grocery",
     image: (
       <img
-        src="src/assets/grocery.png"
+        src={Grocery}
         alt="Grocery"
         className="w-10 h-10 sm:w-14 sm:h-14 object-contain group-hover:scale-110 transition-transform"
       />
@@ -56,7 +71,7 @@ const categories = [
     name: "Herbs & Spices",
     image: (
       <img
-        src="src/assets/mortar.png"
+        src={Herbs}
         alt="Herbs & Spices"
         className="w-10 h-10 sm:w-14 sm:h-14 object-contain group-hover:scale-110 transition-transform"
       />
@@ -83,7 +98,7 @@ const Hero = () => {
         {/* Center Image Section */}
         <div className="w-full md:w-1/3 flex justify-center">
           <img
-            src="src/assets/foodyko_img1.png"
+            src={pandaimg}
             alt="Foodyko Panda"
             className="w-[300px] md:w-[400px] object-contain transition-transform duration-200 ease-in-out hover:scale-102"
           />
@@ -122,41 +137,41 @@ const Hero = () => {
       <div className="bg-[#A47C3B] text-white py-12 flex flex-col md:flex-row items-center justify-around w-full space-y-4 md:space-y-0">
         <div className="flex items-center space-x-2">
           <img
-            src="src/assets/homegrown.png"
+            src={Homegrown}
             alt="Farm-Fresh Offerings"
-            className="w-6 h-6 md:w-9 md:h-9"
+            className="w-6 h-6 md:w-9 md:h-9 object-contain"
           />
           <span className="text-sm md:text-lg">Farm-Fresh Offerings</span>
         </div>
         <div className="flex items-center space-x-2">
           <img
-            src="src/assets/sustainablility.png"
+            src={Sustainability}
             alt="Sustainable Sourcing"
-            className="w-6 h-6 md:w-9 md:h-9"
+            className="w-6 h-6 md:w-9 md:h-9 object-contain"
           />
           <span className="text-sm md:text-lg">Sustainable Sourcing</span>
         </div>
         <div className="flex items-center space-x-2">
           <img
-            src="src/assets/maple-leaf.png"
+            src={Seasonal}
             alt="Seasonal Picks"
-            className="w-6 h-6 md:w-9 md:h-9"
+            className="w-6 h-6 md:w-9 md:h-9 object-contain"
           />
           <span className="text-sm md:text-lg">Seasonal Picks</span>
         </div>
         <div className="flex items-center space-x-2">
           <img
-            src="src/assets/box.png"
+            src={TrialBox}
             alt="Customizable Trial Box"
-            className="w-6 h-6 md:w-9 md:h-9"
+            className="w-6 h-6 md:w-9 md:h-9 object-contain"
           />
           <span className="text-sm md:text-lg">Customizable Trial Box</span>
         </div>
         <div className="flex items-center space-x-2">
           <img
-            src="src/assets/delivery-truck.png"
+            src={Delivery}
             alt="Flexible Delivery"
-            className="w-6 h-6 md:w-9 md:h-9"
+            className="w-6 h-6 md:w-9 md:h-9 object-contain"
           />
           <span className="text-sm md:text-lg">Flexible Delivery</span>
         </div>
@@ -191,7 +206,6 @@ const Hero = () => {
           ))}
         </div>
       </div>
-
     </div>
   );
 };
