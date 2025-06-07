@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Plus, Minus } from "lucide-react";
 import bannerImg from "../assets/bannerr.jpeg";
+import potato from "../assets/mater/removebg2.png"
+import products from "../assets/mater/removebg1.png"
 
 const faqs = [
   {
@@ -85,7 +87,7 @@ const FAQ = () => {
         {/* Left Image - Chips - Hidden on mobile, visible on md+ */}
         <div className="hidden md:block order-1 md:order-none flex-shrink-0 w-40 md:w-56 lg:w-64">
           <img
-            src="src/assets/mater/removebg2.png"
+            src={potato}
             alt="Potato Chips"
             className="w-full h-auto object-contain"
           />
@@ -110,7 +112,7 @@ const FAQ = () => {
         {/* Right Image - Food Products */}
         <div className="order-2 md:order-none flex-shrink-0 w-40 md:w-56 lg:w-64">
           <img
-            src="src/assets/mater/removebg1.png"
+            src={products}
             alt="Foodyko Products"
             className="w-full h-auto object-contain"
           />
