@@ -1,3 +1,20 @@
+import potatoChips from './assets/images/potato_chips.jpg';
+import greenTea from './assets/images/green_tea.jpg';
+import wholeWheatPasta from './assets/images/whole_wheat_pasta.jpg';
+import honey from './assets/images/honey.jpg';
+import masalaPeanuts from './assets/images/masala_peanuts.jpg';
+import quinoa from './assets/images/quinoa.jpg';
+import coconutOil from './assets/images/coconut_oil.jpg';
+import groundTurmeric from './assets/images/ground_turmeric.jpg';
+import greekYogurt from './assets/images/greek_yogurt.jpg';
+import darkChocolate from './assets/images/dark_chocolate.jpg';
+import saltedPretzels from './assets/images/salted_pretzels.jpg';
+import basmatiRice from './assets/images/basmati_rice.jpg';
+import eggs from './assets/images/eggs.jpg';
+import garamMasala from './assets/images/garam_masala.jpg';
+import instantCoffee from './assets/images/instant_coffee.jpg';
+import freshSalmon from './assets/images/fresh_salmon.jpg';
+import almondMilk from './assets/images/almond_milk.jpg';
 
 const products = [
   {
@@ -8,7 +25,7 @@ const products = [
     price: 99,
     mrp: 149,
     discount: "34% Off",
-    image: "src/assets/images/potato_chips.jpg",
+    image: potatoChips,
     badge: "Deal of the Day",
     points: 2,
     isVeg: true,           
@@ -21,7 +38,7 @@ const products = [
     price: 199,
     mrp: 299,
     discount: "33% Off",
-    image: "src/assets/images/green_tea.jpg",
+    image: greenTea,
     badge: "Biggest Savings",
     points: 1,
     isVeg: true,
@@ -34,7 +51,7 @@ const products = [
     price: 129,
     mrp: 199,
     discount: "35% Off",
-    image: "src/assets/images/whole_wheat_pasta.jpg",
+    image: wholeWheatPasta,
     badge: "Healthy Pick",
     points: 2,
     isVeg: true,
@@ -47,7 +64,7 @@ const products = [
     price: 350,
     mrp: 499,
     discount: "30% Off",
-    image: "src/assets/images/honey.jpg",
+    image: honey,
     points: 1,
     isVeg: true,
   },
@@ -59,7 +76,7 @@ const products = [
     price: 149,
     mrp: 199,
     discount: "25% Off",
-    image: "src/assets/images/masala_peanuts.jpg",
+    image: masalaPeanuts,
     badge: "Most Loved",
     points: 2,
     isVeg: true,
@@ -72,7 +89,7 @@ const products = [
     price: 399,
     mrp: 599,
     discount: "34% Off",
-    image: "src/assets/images/quinoa.jpg",
+    image: quinoa,
     points: 1,
     isVeg: true,
   },
@@ -84,7 +101,7 @@ const products = [
     price: 249,
     mrp: 399,
     discount: "38% Off",
-    image: "src/assets/images/coconut_oil.jpg",
+    image: coconutOil,
     badge: "Best Seller",
     points: 2,
     isVeg: true,
@@ -97,7 +114,7 @@ const products = [
     price: 49,
     mrp: 79,
     discount: "38% Off",
-    image: "src/assets/images/ground_turmeric.jpg",
+    image: groundTurmeric,
     points: 1,
     isVeg: true,
   },
@@ -109,7 +126,7 @@ const products = [
     price: 129,
     mrp: 179,
     discount: "28% Off",
-    image: "src/assets/images/greek_yogurt.jpg",
+    image: greekYogurt,
     badge: "Trending Now",
     points: 2,
     isVeg: true,
@@ -122,7 +139,7 @@ const products = [
     price: 299,
     mrp: 399,
     discount: "25% Off",
-    image: "src/assets/images/dark_chocolate.jpg",
+    image: darkChocolate,
     points: 1,
     isVeg: true,
   },
@@ -134,7 +151,7 @@ const products = [
     price: 99,
     mrp: 129,
     discount: "23% Off",
-    image: "src/assets/images/salted_pretzels.jpg",
+    image: saltedPretzels,
     points: 1,
     isVeg: true,
   },
@@ -146,7 +163,7 @@ const products = [
     price: 199,
     mrp: 249,
     discount: "20% Off",
-    image: "src/assets/images/basmati_rice.jpg",
+    image: basmatiRice,
     points: 2,
     isVeg: true,
   },
@@ -158,7 +175,7 @@ const products = [
     price: 99,
     mrp: 120,
     discount: "18% Off",
-    image: "src/assets/images/eggs.jpg",
+    image: eggs,
     badge: "Farm Fresh",
     points: 1,
     isVeg: true,           
@@ -171,7 +188,7 @@ const products = [
     price: 59,
     mrp: 75,
     discount: "21% Off",
-    image: "src/assets/images/garam_masala.jpg",
+    image: garamMasala,
     points: 1,
     isVeg: true,
   },
@@ -183,7 +200,7 @@ const products = [
     price: 149,
     mrp: 199,
     discount: "25% Off",
-    image: "src/assets/images/instant_coffee.jpg",
+    image: instantCoffee,
     points: 1,
     isVeg: true,
   },
@@ -195,7 +212,7 @@ const products = [
     price: 499,
     mrp: 649,
     discount: "23% Off",
-    image: "src/assets/images/fresh_salmon.jpg",
+    image: freshSalmon,
     points: 2,
     isVeg: false,          
   },
@@ -207,7 +224,7 @@ const products = [
     price: 199,
     mrp: 249,
     discount: "20% Off",
-    image: "src/assets/images/almond_milk.jpg",
+    image: almondMilk,
     badge: "Vegan Favorite",
     points: 1,
     isVeg: true,

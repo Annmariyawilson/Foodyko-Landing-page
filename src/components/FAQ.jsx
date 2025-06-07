@@ -92,8 +92,8 @@ const FAQ = () => {
         </div>
 
         {/* Center Content */}
-        <div className="order-3 md:order-none text-center max-w-md mx-auto md:mx-0 md:flex-1 px-4">
-          <p className="text-lg md:text-xl font-medium text-gray-800 mb-4">
+        <div className="flex flex-col items-center justify-center text-center md:px-16 md:py-8 mx-auto max-w-xl">
+          <p className="text-base md:text-xl font-medium text-gray-800 mb-4 whitespace-normal">
             We're here to help! Feel free to reach out to us for any inquiries
             or assistance.
           </p>
